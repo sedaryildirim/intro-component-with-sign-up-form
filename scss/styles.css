@@ -182,6 +182,7 @@ body {
 }
 
 #first-name.error input, #last-name.error input, #email.error input, #password.error input {
+  border: 1px solid var(--cc-red-);
   color: var(--cc-red-);
 }
 
