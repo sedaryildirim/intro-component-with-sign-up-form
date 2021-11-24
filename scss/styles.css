@@ -36,7 +36,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: wrapper-top;
-  margin: 4em 2em 4em 2em;
+  margin: 4em 2em 0em 2em;
   color: white;
   text-align: center;
   font-size: 0.75rem;
