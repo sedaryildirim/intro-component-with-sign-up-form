@@ -16,7 +16,6 @@
 }
 
 body {
-    
     background-image: url(/images/bg-intro-mobile.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +34,8 @@ body {
     "wrapper-bottom";
 }
 
-.wrapper-top { grid-area: wrapper-top; 
+.wrapper-top { 
+    grid-area: wrapper-top; 
     margin: 4em 2em 4em 2em;
     color: white;
     text-align: center;
@@ -129,7 +129,7 @@ body {
 }
 
 // Error statees not visible
-#first-name, #last-name, #email-address, #password {
+#first-name, #last-name, #email, #password {
     small {
         display: none; // change to none
         color: var(--cc-red-);
@@ -150,7 +150,7 @@ body {
     }
 }
 // Error states visible
-#first-name.error, #last-name.error, #email-address.error, #password.error {
+#first-name.error, #last-name.error, #email.error, #password.error {
     small {
         display: block; // change to none
         color: var(--cc-red-);
@@ -168,4 +168,76 @@ body {
     input {
         color: var(--cc-red-);
     }
+}
+
+@media (min-width:375px) {
+  
+    input {
+     min-width: 220px;
+    }
+      
+}
+
+
+@media (min-width:768px) {
+    body {
+        background-image: url(/images/bg-intro-desktop.png);
+        background-position: center;
+        background-repeat: repeat;
+    }
+    input {
+     min-width: 620px;
+    }
+      
+}
+
+@media (min-width:1440px) {
+
+    html, body {
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    body {
+        background-image: url(/images/bg-intro-desktop.png);
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "wrapper-top wrapper-bottom";
+      }
+      
+      .wrapper-bottom {
+      
+        justify-self: center;
+        align-self: center;
+        grid-area: wrapper-bottom;
+      }
+      
+      .wrapper-top {
+      
+        justify-self: center;
+        align-self: center;
+        grid-area: wrapper-top;
+      }
+      
 }

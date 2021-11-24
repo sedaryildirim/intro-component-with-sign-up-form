@@ -146,14 +146,14 @@ body {
   text-decoration: none;
 }
 
-#first-name small, #last-name small, #email-address small, #password small {
+#first-name small, #last-name small, #email small, #password small {
   display: none;
   color: var(--cc-red-);
   text-align: right;
   font-size: 0.5rem;
 }
 
-#first-name img, #last-name img, #email-address img, #password img {
+#first-name img, #last-name img, #email img, #password img {
   display: none;
   position: absolute;
   right: 75px;
@@ -162,18 +162,18 @@ body {
           transform: translateY(-175%);
 }
 
-#first-name input:focus, #last-name input:focus, #email-address input:focus, #password input:focus {
+#first-name input:focus, #last-name input:focus, #email input:focus, #password input:focus {
   outline: none;
 }
 
-#first-name.error small, #last-name.error small, #email-address.error small, #password.error small {
+#first-name.error small, #last-name.error small, #email.error small, #password.error small {
   display: block;
   color: var(--cc-red-);
   text-align: right;
   font-size: 0.5rem;
 }
 
-#first-name.error img, #last-name.error img, #email-address.error img, #password.error img {
+#first-name.error img, #last-name.error img, #email.error img, #password.error img {
   display: block;
   position: absolute;
   right: 75px;
@@ -182,7 +182,83 @@ body {
           transform: translateY(-175%);
 }
 
-#first-name.error input, #last-name.error input, #email-address.error input, #password.error input {
+#first-name.error input, #last-name.error input, #email.error input, #password.error input {
   color: var(--cc-red-);
+}
+
+@media (min-width: 375px) {
+  input {
+    min-width: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: repeat;
+  }
+  input {
+    min-width: 620px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html, body {
+    height: 100%;
+  }
+  html {
+    display: table;
+    margin: auto;
+  }
+  body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        grid-template-areas: "wrapper-top wrapper-bottom";
+  }
+  .wrapper-bottom {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: wrapper-bottom;
+  }
+  .wrapper-top {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: wrapper-top;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

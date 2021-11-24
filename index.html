@@ -10,7 +10,7 @@
 </head>
 <body>
   
-  <main>
+  <main class="main">
     
     <div class="wrapper-top">
       <header>
@@ -26,30 +26,30 @@
       <div class="wrapper-bottom--card"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
       
       <div class="wrapper-bottom--form">
-        <form>
+
+        <form id="form">
 
           <div id="first-name">
-            <input  type="text" placeholder="First Name"></input>
-            <img class="error-img" src="/images/icon-error.svg" alt="">
+            <input id="first-name-input" type="text" placeholder="First Name"></input>
+            <img class="error-img" src="/images/icon-error.svg" alt="First Name Field Cannot be empty" aria-hidden="true">
             <small class="error-msg" >First name can not be empty</small>
           </div>
           
           <div id="last-name">
-            <input type="text" placeholder="Last Name"></input>
-            <img class="error-img" src="/images/icon-error.svg" alt="">
+            <input id="last-name-input" type="text" placeholder="Last Name"></input>
+            <img class="error-img" src="/images/icon-error.svg" alt="Last Name Field Cannot be empty" aria-hidden="true">
             <small class="error-msg">Last name can not be empty</small>
           </div>
           
-          <div id="email-address">
-            <input id="email-address-input" type="text" placeholder="Email Address"></input>
-            <img class="error-img" src="/images/icon-error.svg" alt="">
-            <small class="error-msg-empty">Email Address can not be empty</small>
-            <small class="error-msg">Looks like this is not an email</small>
+          <div id="email">
+            <input id="email-input" type="email" placeholder="Email Address"></input>
+            <img class="error-img" src="/images/icon-error.svg" alt="Email Field Cannot be empty" aria-hidden="true">
+            <small class="error-msg error-msg-change">Email Address can not be empty</small>
           </div>
           
           <div id="password">
-            <input type="text" placeholder="Password"></input>
-            <img class="error-img" src="/images/icon-error.svg" alt="">
+            <input id="password-input" type="password" placeholder="Password"></input>
+            <img class="error-img" src="/images/icon-error.svg" alt="Passwrd Field Cannot be empty" aria-hidden="true">
             <small class="error-msg">Password can not be empty</small>
           </div>
           
