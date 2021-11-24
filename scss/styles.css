@@ -110,42 +110,6 @@ body {
   border: 1px solid var(--cc-gray-blue-);
 }
 
-.wrapper-bottom--form small {
-  display: none;
-  color: var(--cc-red-);
-  text-align: right;
-  font-size: 0.5rem;
-}
-
-.wrapper-bottom--form img {
-  display: none;
-  position: absolute;
-  right: 75px;
-  height: 20px;
-  -webkit-transform: translateY(-175%);
-          transform: translateY(-175%);
-}
-
-.wrapper-bottom--form small.error {
-  display: block;
-  color: var(--cc-red-);
-  text-align: right;
-  font-size: 0.5rem;
-}
-
-.wrapper-bottom--form img.error {
-  display: block;
-  position: absolute;
-  right: 75px;
-  height: 20px;
-  -webkit-transform: translateY(-175%);
-          transform: translateY(-175%);
-}
-
-.wrapper-bottom--form input.error {
-  color: var(--cc-red-);
-}
-
 .wrapper-bottom--form input:focus {
   outline: none;
 }
@@ -180,5 +144,45 @@ body {
 
 .wrapper-bottom--form footer a, .wrapper-bottom--form footer a:hover, .wrapper-bottom--form footer a:visited, .wrapper-bottom--form footer a:active {
   text-decoration: none;
+}
+
+#first-name small, #last-name small, #email-address small, #password small {
+  display: none;
+  color: var(--cc-red-);
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+#first-name img, #last-name img, #email-address img, #password img {
+  display: none;
+  position: absolute;
+  right: 75px;
+  height: 20px;
+  -webkit-transform: translateY(-175%);
+          transform: translateY(-175%);
+}
+
+#first-name input:focus, #last-name input:focus, #email-address input:focus, #password input:focus {
+  outline: none;
+}
+
+#first-name.error small, #last-name.error small, #email-address.error small, #password.error small {
+  display: block;
+  color: var(--cc-red-);
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+#first-name.error img, #last-name.error img, #email-address.error img, #password.error img {
+  display: block;
+  position: absolute;
+  right: 75px;
+  height: 20px;
+  -webkit-transform: translateY(-175%);
+          transform: translateY(-175%);
+}
+
+#first-name.error input, #last-name.error input, #email-address.error input, #password.error input {
+  color: var(--cc-red-);
 }
 /*# sourceMappingURL=styles.css.map */

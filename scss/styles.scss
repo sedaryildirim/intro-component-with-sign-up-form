@@ -91,45 +91,9 @@ body {
             border: 1px solid var(--cc-gray-blue-);
         }
         
-        // error state
-        small {
-            display: none; // change to none
-            color: var(--cc-red-);
-            text-align: right;
-            font-size: 0.5rem;
-        }
-        
-        img {
-            display: none;
-            position: absolute;
-            right: 75px;
-            height: 20px;
-            transform: translateY(-175%);
-        }
-        
-        small.error {
-            display: block; // change to none
-            color: var(--cc-red-);
-            text-align: right;
-            font-size: 0.5rem;
-        }
-        img.error {
-            display: block;
-            position: absolute;
-            right: 75px;
-            height: 20px;
-            transform: translateY(-175%);
-        }
-        
-        input.error {
-            color: var(--cc-red-);
-        }
-        // end error states
-        
         input:focus {
             outline: none;
         }
-        
         
         button {
             margin: 1em 0em 1em 0em;
@@ -161,5 +125,47 @@ body {
                 text-decoration: none;
             }
         }
+    }
+}
+
+// Error statees not visible
+#first-name, #last-name, #email-address, #password {
+    small {
+        display: none; // change to none
+        color: var(--cc-red-);
+        text-align: right;
+        font-size: 0.5rem;
+    }
+    
+    img {
+        display: none;
+        position: absolute;
+        right: 75px;
+        height: 20px;
+        transform: translateY(-175%);
+    }
+    
+    input:focus {
+        outline: none;
+    }
+}
+// Error states visible
+#first-name.error, #last-name.error, #email-address.error, #password.error {
+    small {
+        display: block; // change to none
+        color: var(--cc-red-);
+        text-align: right;
+        font-size: 0.5rem;
+    }
+    img {
+        display: block;
+        position: absolute;
+        right: 75px;
+        height: 20px;
+        transform: translateY(-175%);
+    }
+    
+    input {
+        color: var(--cc-red-);
     }
 }
