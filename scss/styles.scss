@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url('/images/bg-intro-mobile.png');
+    background-image: url('./images/bg-intro-mobile.png');
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--cc-red-);
@@ -181,7 +181,7 @@ body {
 
 @media (min-width:768px) {
     body {
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('./images/bg-intro-desktop.png');
         background-position: center;
         background-repeat: repeat;
     }
