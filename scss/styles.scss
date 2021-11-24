@@ -185,12 +185,31 @@ body {
         background-position: center;
         background-repeat: repeat;
     }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+    .wrapper-top {
+        max-width: 60%;
+        h1 {
+            font-size: 3rem;
+        }
+        
+        p { font-size: 1rem;
+        }
+    }
+
     input {
         width: 100%;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-
+    
     #first-name.error, #last-name.error, #email.error, #password.error {
         img {
             display: block;
@@ -200,7 +219,7 @@ body {
             transform: translateY(-175%);
         }
     }
-  
+    
 }
 
 @media (min-width:1000px) {
@@ -254,7 +273,7 @@ body {
         justify-self: start;
         align-self: center;
         grid-area: wrapper-top;
-
+        
         header {
             text-align: left;
             font-size: 2rem;
@@ -275,7 +294,7 @@ body {
         max-width: 50%;
         justify-self: end;
     }
-
+    
     .wrapper-bottom {
         justify-self: start;
         padding-right: 12em;
@@ -287,12 +306,12 @@ body {
         max-width: 50%;
         justify-self: end;
     }
-
+    
     .wrapper-bottom {
         justify-self: start;
         padding-right: 30em;
     }
-
+    
     #first-name.error, #last-name.error, #email.error, #password.error {
         img {
             display: block;
