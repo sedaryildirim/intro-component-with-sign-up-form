@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sedaryildirim/intro-component-with-sign-up-form)
-- Live Site URL: [Add live site URL here](https://sedaryildirim.github.io/intro-component-with-sign-up-form/)
+- Solution URL: [Github Repo](https://github.com/sedaryildirim/intro-component-with-sign-up-form)
+- Live Site URL: [Github Pages](https://sedaryildirim.github.io/intro-component-with-sign-up-form/)
 
 ## My process
 

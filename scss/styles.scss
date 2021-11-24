@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url('/images/bg-intro-desktop.png');
+    background-image: url('..images/bg-intro-desktop.png');
     background-position: center;
     background-repeat: repeat;
     background-color: var(--cc-red-);
@@ -181,7 +181,7 @@ body {
 
 @media (min-width:768px) {
     body {
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('../images/bg-intro-desktop.png');
         background-position: center;
         background-repeat: repeat;
     }
@@ -217,7 +217,7 @@ body {
     body {
         display: table-cell;
         vertical-align: middle;
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('../images/bg-intro-desktop.png');
         background-position: center;
         background-repeat: repeat;
     }
