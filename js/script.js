@@ -22,19 +22,19 @@ form.addEventListener('submit', e => {
     } else {
         firstName.classList.remove('error');
     }
-
+    
     if (lastNameInput.value.length == 0) {
         lastName.classList.add('error');
     } else {
         lastName.classList.remove('error');
     }
-
+    
     if (emailInput.value.length == 0) {
         email.classList.add('error');
     } else {
         email.classList.remove('error');
     }
-
+    
     if (passwordInput.value.length == 0) {
         password.classList.add('error');
     } else {

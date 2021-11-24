@@ -235,7 +235,7 @@ body {
   #first-name.error img, #last-name.error img, #email.error img, #password.error img {
     display: block;
     position: absolute;
-    right: 265px;
+    right: 200px;
     height: 20px;
     -webkit-transform: translateY(-175%);
             transform: translateY(-175%);
@@ -283,8 +283,9 @@ body {
         grid-template-areas: "wrapper-top wrapper-bottom";
   }
   .wrapper-bottom {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    padding-right: 12em;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -293,8 +294,9 @@ body {
     grid-area: wrapper-bottom;
   }
   .wrapper-top {
-    -ms-grid-column-align: start;
-        justify-self: start;
+    max-width: 50%;
+    -ms-grid-column-align: end;
+        justify-self: end;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -303,32 +305,27 @@ body {
     grid-area: wrapper-top;
   }
   .wrapper-top header {
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 2em;
   }
   .wrapper-top p {
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     font-weight: 500;
     margin: 0em 0.75em 2em 0.75em;
   }
-}
-
-@media (min-width: 1000px) {
-  .wrapper-top {
-    max-width: 50%;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-  .wrapper-bottom {
-    -ms-grid-column-align: start;
-        justify-self: start;
-    padding-right: 12em;
+  #first-name.error img, #last-name.error img, #email.error img, #password.error img {
+    display: block;
+    position: absolute;
+    right: 275px;
+    height: 20px;
+    -webkit-transform: translateY(-175%);
+            transform: translateY(-175%);
   }
 }
 
-@media (min-width: 1750px) {
+@media (min-width: 1000px) and (min-width: 1750px) {
   .wrapper-top {
     max-width: 50%;
     -ms-grid-column-align: end;
@@ -342,7 +339,7 @@ body {
   #first-name.error img, #last-name.error img, #email.error img, #password.error img {
     display: block;
     position: absolute;
-    right: 565px;
+    right: 550px;
     height: 20px;
     -webkit-transform: translateY(-175%);
             transform: translateY(-175%);
