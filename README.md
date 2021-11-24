@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/images/screenshot.jpg)
 
 ### Links
 
@@ -51,7 +51,14 @@ Users should be able to:
 
 ### What I learned
 
+Better understanding of JS form validation with if/else statements chained together
+Had issues with layout/responsiveness and realisied i had missed a class selector on my main wrapper :whoops:
+Better JS bug spotting/troubleshooting
+
 ### Continued development
+
+have to figure out how to use js to change innerhtml on event listener and better email validation
+understanding
 
 ### Useful resources
 
